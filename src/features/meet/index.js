@@ -3,7 +3,7 @@ import { createStore, createEvent, createEffect, sample } from 'effector'
 
 //get random image
 const getCatsFx = createEffect(async () => {
-  const res = await fetch(`${process.env.REACT_APP_API}/api/randomcat`)
+  const res = await fetch(`${process.env.REACT_APP_API}api/randomcat`)
   if (!res.ok) throw res
   return res.json()
 })
