@@ -48,7 +48,7 @@ export const MenuAction = (props) => {
 
   return (
     <Popup
-      trigger={() => <p className="text-white rounded-full p-3 bg-[#3C4043] ml-3">{props.icon}</p>}
+      trigger={() => <p className="text-white rounded-full p-3 bg-[#3C4043] cursor-pointer ml-3">{props.icon}</p>}
       position="top left"
       closeOnDocumentClick={false} //if true popup will close with modal
     >

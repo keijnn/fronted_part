@@ -11,10 +11,13 @@ const getCatsFx = createEffect(async () => {
 //pressed on image
 export const imageChanged = createEvent()
 
-export const popupStatus = createEvent()
+export const popupShowed = createEvent()
+
 
 //get current image id
 const $currentUser = createStore(0).on(imageChanged, (_, index) => index)
+
+export const $status = createStore(false).on(popupShowed, (state, action) => !state) 
 
 //default images
 export const $photos = createStore([
