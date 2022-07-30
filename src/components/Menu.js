@@ -16,9 +16,17 @@ import { BiCommentDetail } from 'react-icons/bi'
 import { MdIosShare } from 'react-icons/md'
 
 export const Menu = () => {
+
+  const date = new Date()
+
+  const time = date.getHours() + ':' + date.getMinutes()
+
   return (
     <div className="h-[12%] flex items-center justify-between">
-      <p className="text-white">Team meeting</p>
+      <div className="divide-x flex">
+        <p className='mr-2 text-white'>{time}</p>
+        <p className="text-white pl-2">Team meeting</p>
+      </div>
       <div className="flex">
         <BsMicFill className="fill-white rounded-full w-10 h-10 bg-[#3C4043] p-2 ml-3" />
         <BsCameraVideo className="fill-white rounded-full w-10 h-10 bg-[#3C4043] p-2 ml-3" />

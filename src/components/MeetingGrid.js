@@ -7,7 +7,7 @@ export const MeetingGrid = () => {
       key={person.id}
       onClick={() => imageChanged(person.id)}
       style={{ backgroundImage: `url(${person.avatar})`, backgroundRepeat: 'no-repeat' }}
-      className={`w-full h-full bg-contain rounded-lg p-3 flex items-end`}
+      className={`w-full h-full bg-contain bg-[#3C4043] rounded-lg p-3 flex items-end`}
     >
       <p className="text-white">{person.name}</p>
     </div>
