@@ -15,7 +15,6 @@ import { BsPeople } from 'react-icons/bs'
 import { BiCommentDetail } from 'react-icons/bi'
 import { MdIosShare } from 'react-icons/md'
 
-
 export const Menu = () => {
   return (
     <div className="h-[12%] flex items-center justify-between">
@@ -26,10 +25,7 @@ export const Menu = () => {
         <MdOutlineSubtitles className="fill-white rounded-full w-10 h-10 bg-[#3C4043] p-2 ml-3" />
         <FaRegHandPaper className="fill-white rounded-full w-10 h-10 bg-[#3C4043] p-2 ml-3" />
         <MdScreenShare className="fill-white rounded-full w-10 h-10 bg-[#3C4043] p-2 ml-3" />
-        <MenuAction
-          icon={<GrMoreVertical />}
-          
-        />
+        <MenuAction icon={<GrMoreVertical />} />
         <ImPhoneHangUp className="fill-white bg-[red] rounded-full w-12 h-10 p-2 ml-3" />
       </div>
       <div className="flex">
