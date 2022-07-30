@@ -1,3 +1,6 @@
+//import components
+import { MenuAction } from './MenuActions'
+
 //import icons
 import { BsMicFill } from 'react-icons/bs'
 import { MdScreenShare } from 'react-icons/md'
@@ -23,7 +26,10 @@ export const Menu = () => {
         <MdOutlineSubtitles className="fill-white rounded-full w-10 h-10 bg-[#3C4043] p-2 ml-3" />
         <FaRegHandPaper className="fill-white rounded-full w-10 h-10 bg-[#3C4043] p-2 ml-3" />
         <MdScreenShare className="fill-white rounded-full w-10 h-10 bg-[#3C4043] p-2 ml-3" />
-        <GrMoreVertical className="fill-white rounded-full w-10 h-10 bg-[#3C4043] p-2 ml-3" />
+        <MenuAction
+          icon={<GrMoreVertical />}
+          
+        />
         <ImPhoneHangUp className="fill-white bg-[red] rounded-full w-12 h-10 p-2 ml-3" />
       </div>
       <div className="flex">
